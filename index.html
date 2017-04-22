@@ -6,12 +6,14 @@
     </head>
     
     <body ng-app="flickerSearch">
+        <div class="search" ng-controller="flickrController">
+            <input placeholder="Search Photos" ng-model="searchTag">
+        </div>
         
         <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+        <script src="app.js"></script>
         <script src="flickrFactory.js"></script>
         <script src="flickrController.js"></script>
-        <script src="app.js"></script>
     </body>
 </html>
