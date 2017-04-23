@@ -5,10 +5,16 @@
         <title>Flickr Photostream</title>
     </head>
     
-    <body ng-app="flickrSearch">
-        <div class="search" ng-controller="flickrController">
+    <body ng-app="flickrSearch" ng-controller="flickrController">
+        <div class="search">
             <input placeholder="Search Photos" ng-model="searchTag">
             <button ng-click="setTag(searchTag)">Search</button>
+        </div>
+        
+        <div class="image-list" ng-if="images">
+            <div class="image" ng-repeat="image in images">
+                <img src="{{image}}">
+            </div>
         </div>
         
         <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
