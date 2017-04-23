@@ -8,13 +8,12 @@
     <body ng-app="flickrSearch">
         <div class="search" ng-controller="flickrController">
             <input placeholder="Search Photos" ng-model="searchTag">
-            <button ng-onclick="setTag()">Search</button>
+            <button ng-click="setTag(searchTag)">Search</button>
         </div>
         
         <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
         <script src="app.js"></script>
-        <script src="flickrFactory.js"></script>
         <script src="flickrController.js"></script>
     </body>
 </html>
