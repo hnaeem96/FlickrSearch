@@ -11,15 +11,15 @@
             <button ng-click="setTag(searchTag)">Search</button>
         </div>
         
-        <div class="image-list" ng-if="images">
-            <div class="image" ng-repeat="image in images">
-                <img src="{{image}}">
+        <div class="image-list">
+            <div class="image" ng-repeat="image in images track by $index">
+                <img src="{{image}}" style="max-height:500px; width: auto;">
             </div>
         </div>
         
         <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
         <script src="app.js"></script>
-        <script src="flickrController.js"></script>
+<!--        <script src="flickrController.js"></script>-->
     </body>
 </html>
